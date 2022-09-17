@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative 'mega_lotto/version'
+require 'drawing'
 
 begin
   require 'pry'
