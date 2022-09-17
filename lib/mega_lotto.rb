@@ -1,6 +1,12 @@
 # frozen_string_literal: true
 
-require_relative "mega_lotto/version"
+require_relative 'mega_lotto/version'
+
+begin
+  require 'pry'
+rescue LoadError
+  'pry not installed'
+end
 
 module MegaLotto
   class Error < StandardError; end
