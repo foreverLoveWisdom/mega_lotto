@@ -3,7 +3,7 @@
 module MegaLotto
   class Drawing
     def draw
-      (1...59).to_a.sample(5)
+      (0..59).to_a.sample(5)
     end
   end
 end

@@ -18,6 +18,10 @@ module MegaLotto
       it 'each element is an integer' do
         expect(draw).to all(be_an(Integer))
       end
+
+      it 'each element is less than 60' do
+        expect(draw).to all(be < 60)
+      end
     end
   end
 end
